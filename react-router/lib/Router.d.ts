@@ -86,12 +86,12 @@ export interface InjectedRouter {
 }
 
 export interface RouteComponentProps<P, R> {
-    location: Location;
-    params: P & R;
-    route: PlainRoute;
-    router: InjectedRouter;
-    routes: PlainRoute[];
-    routeParams: R;
+    location?: Location;
+    params?: P & R;
+    route?: PlainRoute;
+    router?: InjectedRouter;
+    routes?: PlainRoute[];
+    routeParams?: R;
 }
 
 export interface RouterProps extends ClassAttributes<any> {
